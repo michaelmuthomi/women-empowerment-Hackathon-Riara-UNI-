@@ -26,15 +26,14 @@ The Women Empowerment Platform is designed to support and uplift women in the te
    git clone https://github.com/michaelmuthomi/women-empowerment-Hackathon-Riara-UNI-.git
 
 2. Navigate to the project directory:
-   
-
+    ```sh
+    cd women-empowerment-Hackathon-Riara-UNI-
 3. Install dependencies:
     ```sh
     npm install  
 4. To start the development server, run:
     ```bash
     npm run dev
-
 ### Project Structure
 ```sh
 .

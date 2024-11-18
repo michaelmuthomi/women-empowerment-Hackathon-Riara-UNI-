@@ -1,50 +1,73 @@
-# React + TypeScript + Vite
+# Women Empowerment Platform
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
 
-Currently, two official plugins are available:
+The Women Empowerment Platform is designed to support and uplift women in the tech industry. It provides a space for connection, collaboration, and mentorship, helping women overcome the unique challenges they face in a male-dominated field.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## Expanding the ESLint configuration
+- **Mentorship Programs**: Connect with experienced female mentors who understand the challenges women face in the tech industry.
+- **Networking Opportunities**: Participate in networking events, online forums, and group discussions to connect with peers.
+- **Courses and Workshops**: Access resources, workshops, and courses focused on personal and professional growth.
+- **All-Female Collaboration Teams**: Collaborate with fellow female tech enthusiasts on projects, hackathons, and challenges.
+- **Community Support**: Join a supportive community of like-minded women who share your experiences and goals.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Getting Started
 
-- Configure the top-level `parserOptions` property like this:
+### Prerequisites
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+- Node.js
+- npm
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+### Installation
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/michaelmuthomi/women-empowerment-Hackathon-Riara-UNI-.git
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+2. Navigate to the project directory:
+   
+
+3. Install dependencies:
+    ```sh
+    npm install  
+4. To start the development server, run:
+    ```bash
+    npm run dev
+
+### Project Structure
+```sh
+.
+├── public/
+├── src/
+│   ├── assets/
+│   │   ├── css/
+│   │   ├── img/
+│   │   ├── js/
+│   ├── components/
+│   │   ├── [Sidebar.tsx]
+│   │   ├── ui/
+│   ├── lib/
+│   │   ├── supabase.ts
+│   │   ├── utils.ts
+│   ├── routes/
+│   │   ├── __root.tsx
+│   │   ├── dashboard/
+│   │   ├── [index.tsx]
+│   │   ├── login.tsx
+│   │   ├── [signup.tsx]
+│   ├── App.css
+│   ├── App.tsx
+│   ├── main.tsx
+│   ├── [routeTree.gen.ts]
+│   ├── vite-env.d.ts
+├── [components.json]
+├── [eslint.config.js]
+├── [index.html]
+├── [package.json]
+├── [postcss.config.js]
+├── [tailwind.config.js]
+├── [tsconfig.app.json]
+├── [tsconfig.json]
+├── [tsconfig.node.json]
+├── [vite.config.ts]

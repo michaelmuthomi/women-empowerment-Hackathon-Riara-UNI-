@@ -1,4 +1,5 @@
 import { createFileRoute, redirect } from '@tanstack/react-router'
+import logo from '@/assets/img/logo.png'
 
 export const Route = createFileRoute('/signup')({
   component: RouteComponent,
@@ -29,7 +30,7 @@ function SignupPage() {
             ></div>
           </div>
           <div className="sticky top-0 pt-6 lg:pt-8 flex items-center justify-between text-slate-700 font-semibold text-sm leading-6 dark:text-slate-200">
-            <img src="../src/assets/img/logo.png" className="w-10 h-10" />
+            <img src={logo} className="w-10 h-10" />
             <div className="flex items-center gap-x-4">
               <button type="button" className="-m-3 block p-3 md:hidden">
                 <svg

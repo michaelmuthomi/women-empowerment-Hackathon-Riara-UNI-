@@ -1,4 +1,10 @@
 import { createFileRoute } from '@tanstack/react-router'
+import logo from '@/assets/img/logo.png'
+import collaborationPlatformImage from '@/assets/img/collaboration-platform.jpg'
+import mentorshipImage from '@/assets/img/mentorship.jpg'
+import networkingImage from '@/assets/img/networking.jpg'
+import collaborationImage from '@/assets/img/collaboration.jpg'
+import personalDevelopmentImage from '@/assets/img/personal.jpg'
 
 export const Route = createFileRoute('/')({
   component: RouteComponent,
@@ -22,7 +28,7 @@ function HomePage(){
             </div>
             </div>
             <div className="relative pt-6 lg:pt-8 flex items-center justify-between text-slate-700 font-semibold text-sm leading-6 dark:text-slate-200">
-            <img src="src/assets/img/logo.png" className="w-14 h-10 object-contain" />
+            <img src={logo} className="w-14 h-10 object-contain" />
             <div className="flex items-center gap-x-4">
                 <button type="button" className="-m-3 block p-3 md:hidden">
                 <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"
@@ -86,7 +92,7 @@ function HomePage(){
                 </div>
               </div>
               <div className="-ml-12 -mt-12 p-12 lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden">
-                <img className="w-[48rem] max-w-none rounded-xl bg-gray-900 shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem]" src="src/assets/img/collaboration-platform.jpg" alt="" />
+                <img className="w-[48rem] max-w-none rounded-xl bg-gray-900 shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem]" src={collaborationPlatformImage} alt="" />
               </div>
               <div className="lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
                 <div className="lg:pr-4">
@@ -240,7 +246,7 @@ function HomePage(){
                     </div>
                     <div className="relative min-h-[30rem] w-full grow [container-type:inline-size] max-lg:mx-auto max-lg:max-w-sm">
                       <div className="absolute inset-x-10 bottom-0 top-10 overflow-hidden rounded-t-[12cqw] border-x-[3cqw] border-t-[3cqw] border-gray-700 bg-gray-900 shadow-2xl">
-                        <img className="size-full object-cover object-top" src="src/assets/img/mentorship.jpg" alt="" />
+                        <img className="size-full object-cover object-top" src={mentorshipImage} alt="" />
                       </div>
                     </div>
                   </div>
@@ -254,7 +260,7 @@ function HomePage(){
                       <p className="mt-2 max-w-lg text-sm/6 text-gray-600 max-lg:text-center">Our platform offers networking events, online forums, and group discussions where you can connect with peers.</p>
                     </div>
                     <div className="flex flex-1 items-center justify-center px-8 max-lg:pb-12 max-lg:pt-10 sm:px-10 lg:pb-2">
-                      <img className="w-full max-lg:max-w-xs rounded-10" src="src/assets/img/networking.jpg" alt="" />
+                      <img className="w-full max-lg:max-w-xs rounded-10" src={networkingImage} alt="" />
                     </div>
                   </div>
                   <div className="pointer-events-none absolute inset-px rounded-lg shadow ring-1 ring-black/5 max-lg:rounded-t-[2rem]"></div>
@@ -267,7 +273,7 @@ function HomePage(){
                       <p className="mt-2 max-w-lg text-sm/6 text-gray-600 max-lg:text-center">Find and collaborate with fellow female tech enthusiasts on projects, hackathons, and challenges</p>
                     </div>
                     <div className="flex flex-1 items-center [container-type:inline-size] max-lg:py-6 lg:pb-2">
-                      <img className="h-[min(152px,40cqw)] object-cover object-center w-full" src="src/assets/img/collaboration.jpg" alt="" />
+                      <img className="h-[min(152px,40cqw)] object-cover object-center w-full" src={collaborationImage} alt="" />
                     </div>
                   </div>
                   <div className="pointer-events-none absolute inset-px rounded-lg shadow ring-1 ring-black/5"></div>
@@ -282,7 +288,7 @@ function HomePage(){
                     <div className="relative min-h-[30rem] w-full grow">
                       <div className="absolute bottom-0 left-10 right-0 top-10 overflow-hidden rounded-tl-xl bg-gray-900 shadow-2xl">
                         <div className="flex bg-gray-800/40 ring-1 ring-white/5 h-full">
-                            <img className="h-[min(152px,40cqw)] object-cover object-center w-full h-full " src="src/assets/img/personal.jpg" alt="" />
+                            <img className="h-[min(152px,40cqw)] object-cover object-center w-full h-full " src={personalDevelopmentImage} alt="" />
                         </div>
                         <div className="px-6 pb-14 pt-6">
                         </div>

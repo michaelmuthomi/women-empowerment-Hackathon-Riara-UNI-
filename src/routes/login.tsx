@@ -1,5 +1,6 @@
 import { createFileRoute } from '@tanstack/react-router'
 import { Toaster } from "sonner";
+import logo from '@/assets/img/logo.png'
 import { Link } from '@tanstack/react-router';
 
 export const Route = createFileRoute('/login')({
@@ -26,7 +27,7 @@ function LoginPage() {
           ></div>
         </div>
         <div className="relative pt-6 lg:pt-8 flex justify-between text-slate-700 font-semibold text-sm leading-6 dark:text-slate-200">
-          <img src="../src/assets/img/logo.png" className="w-10 h-10" />
+          <img src={logo} className="w-10 h-10" />
           <div className="flex gap-x-4">
             <button type="button" className="-m-3 block p-3 md:hidden">
               <svg

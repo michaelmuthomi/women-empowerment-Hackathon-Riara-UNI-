@@ -23,20 +23,23 @@ const profileFormSchema = z.object({
   email: z.string().email({
     message: "Please enter a valid email address.",
   }),
-  bio: z.string().max(160).min(4),
-  jobTitle: z.string().min(2, {
-    message: "Job title must be at least 2 characters.",
-  }),
-  company: z.string().min(2, {
-    message: "Company name must be at least 2 characters.",
-  }),
-  yearsOfExperience: z.string(),
   first_name: z.string().min(1, {
     message: "First name is required.",
   }),
   last_name: z.string().min(1, {
     message: "Last name is required.",
   }),
+  about: z.string().max(160),
+  street_address: z.string(),
+  city: z.string(),
+  region: z.string(),
+  postal_code: z.string(),
+  experience: z.string(),
+  field_of_study: z.string(),
+  mentorship: z.boolean(),
+  goals: z.string(),
+  github_handle: z.string(),
+  linkedin_handle: z.string(),
 });
 
 type ProfileFormValues = z.infer<typeof profileFormSchema>;
@@ -44,10 +47,19 @@ type ProfileFormValues = z.infer<typeof profileFormSchema>;
 const defaultValues: Partial<ProfileFormValues> = {
   username: "janedoe",
   email: "jane.doe@example.com",
-  bio: "Passionate about empowering women in tech. Full-stack developer with a love for clean code and solving complex problems.",
-  jobTitle: "Senior Software Engineer",
-  company: "TechInnovate Inc.",
-  yearsOfExperience: "5-10",
+  first_name: "Jane",
+  last_name: "Doe",
+  about: "Passionate about empowering women in tech. Full-stack developer with a love for clean code and solving complex problems.",
+  street_address: "",
+  city: "",
+  region: "",
+  postal_code: "",
+  experience: "5-10",
+  field_of_study: "",
+  mentorship: false,
+  goals: "",
+  github_handle: "",
+  linkedin_handle: "",
 };
 
 ("use client");

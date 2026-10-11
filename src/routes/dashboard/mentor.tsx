@@ -18,13 +18,11 @@ function RouteComponent() {
 
 'use client'
 
-import { Search, Filter, ChevronDown, Star } from 'lucide-react'
+import { Search } from 'lucide-react'
 
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
+import { Card, CardContent, CardFooter, CardHeader } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 
 // Mock data for mentors
@@ -64,11 +62,9 @@ const mentors = [
 
 export default function FindAMentor() {
   const [searchTerm, setSearchTerm] = React.useState("")
-  const [selectedSkill, setSelectedSkill] = React.useState("")
 
-  const filteredMentors = mentors.filter(mentor => 
-    mentor.name.toLowerCase().includes(searchTerm.toLowerCase()) &&
-    (selectedSkill === "" || mentor.skills.includes(selectedSkill))
+  const filteredMentors = mentors.filter(mentor =>
+    mentor.name.toLowerCase().includes(searchTerm.toLowerCase())
   )
 
   return (

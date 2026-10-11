@@ -1,6 +1,5 @@
-import * as React from 'react'
 import { createFileRoute } from '@tanstack/react-router'
-import { Bell, Calendar, MessageSquare, Search, Users } from 'lucide-react'
+import { Bell, Calendar, MessageSquare, Users } from 'lucide-react'
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
 import { Button } from '@/components/ui/button'
 import {
@@ -10,7 +9,6 @@ import {
   CardHeader,
   CardTitle,
 } from '@/components/ui/card'
-import { Input } from '@/components/ui/input'
 import Sidebar from '@/components/Sidebar'
 
 export const Route = createFileRoute('/dashboard/')({

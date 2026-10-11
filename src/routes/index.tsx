@@ -51,7 +51,7 @@ function HomePage(){
         </div>
         <section className="py-10 pt-40 flex flex-col items-center gap-6">
             <div>
-                <h1 className="font-extrabold text-4xl sm:text-5xl lg:text-6xl tracking-tight text-center dark:text-white">
+                <h1 className="font-extrabold text-4xl sm:text-5xl lg:text-6xl tracking-tight text-center text-white">
                     We Stand with Women<br /> Building a Brighter Future Together
                 </h1>
                 <p className="mt-6 text-xl text-slate-600 text-center max-w-3xl mx-auto dark:text-slate-400">
